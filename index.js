@@ -3,9 +3,10 @@
  * @author Furkan Inanc
  * @version 1.0.0
  */
-
+const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
 let ffmpeg = require("fluent-ffmpeg");
 
+ffmpeg.setFfmpegPath(ffmpegPath);
 /**
  * A class to convert M3U8 to MP4
  * @class
